@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-      - "release/xx" #anything after release
+      - "release/xx" #anything after release asdsd
     paths:
       - "src/xx"  #to aviod run the pipeline on all the repository files as maybe i have documentation files so to avoid that i can identify specifc paths
 
