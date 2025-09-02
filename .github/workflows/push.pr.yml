@@ -1,16 +1,15 @@
 on:
   push:
     branches:
-    - main
-    - "release/xx" #anything after release
+      - main
+      - "release/xx" #anything after release
     paths:
       - "src/xx"  #to aviod run the pipeline on all the repository files as maybe i have documentation files so to avoid that i can identify specifc paths
 
-  pull_request:
+  pull_request: ########
     branches:
-    - main
-    - "release/xx" #anything after release
-
+      - main
+      - "release/xx" #anything after release
 jobs:
   test:
    runs-on: ubuntu-latest
