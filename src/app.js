@@ -2,6 +2,9 @@ function greet(name) {
   return `Hello, ${name}!`;
 }
 
-// For manual debugging
-console.log(greet("World")); // tests
-module.exports = greet;
+// Only log when this file is run directly, not when imported by tests
+if (require.main === module) {
+  console.log(greet("World")); // manual test
+}
+
+module.exports = greet;;
