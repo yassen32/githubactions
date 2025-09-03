@@ -1,10 +1,11 @@
 function greet(name) {
-    return `Hello, ${name}`;
+  return `Hello, ${name}!`;
 }
 
-module.exports = greet; // Ensure function is exportable
-// If run directly, print output (useful for debugging)
-
+// Only log when this file is run directly, not when imported by tests
 if (require.main === module) {
-    console.log(greet("World"));
+  console.log(greet("World")); // manual test
+}
+
+module.exports = greet;
     
